@@ -269,7 +269,7 @@ export const createNodes = (entity, ctx, uid) => {
           attributeName,
         });
 
-        entryNode.children = entryNode.children.concat([JSONNode.id]);
+        //entryNode.children = entryNode.children.concat([JSONNode.id]);
 
         entity[`${attributeName}___NODE`] = JSONNode.id;
         // Resolve only the attributeName___NODE and not to both ones
