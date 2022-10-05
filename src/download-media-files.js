@@ -119,9 +119,9 @@ const extractImages = async (item, ctx, uid) => {
     const type = attribute?.type || null;
 
     // Extract images for relations
-    if (attribute?.type === 'relation') {
-      return extractImages(value, ctx, attribute.target);
-    }
+    // if (attribute?.type === 'relation') {
+    //  return extractImages(value, ctx, attribute.target);
+    // }
 
     if (value && type) {
       if (type === 'richtext') {
